@@ -11,6 +11,7 @@
 .classpath
 *.jardesc
 *.jar
+*/target/
 /target/
 *.prefs
 *.sw?
