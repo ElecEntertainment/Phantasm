@@ -7,8 +7,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class Main implements ApplicationListener {
-    Texture t1;
-    Texture t2;
+    Texture t1 = new Texture(Gdx.files.internal("libgdx-logo.png"));
+    Texture t2 = new Texture(Gdx.files.internal("ElecEntertainment.jpeg"));
     Texture texture;
     SpriteBatch batch;
     float elapsed;

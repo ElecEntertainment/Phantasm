@@ -61,12 +61,6 @@
                 <module>html</module>
             </modules>
         </profile>
-        <profile>
-            <id>ios</id>
-            <modules>
-                <module>ios</module>
-            </modules>
-        </profile>
     </profiles>
 
     <modules>
