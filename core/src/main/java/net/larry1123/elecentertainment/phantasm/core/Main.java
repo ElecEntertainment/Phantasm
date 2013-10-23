@@ -15,8 +15,6 @@ public class Main implements ApplicationListener {
 
     @Override
     public void create() {
-        t1 = new Texture(Gdx.files.internal("libgdx-logo.png"));
-        t2 = new Texture(Gdx.files.internal("ElecEntertainment.jpeg"));
         texture = t1;
         batch = new SpriteBatch();
     }
