@@ -28,6 +28,7 @@ public class Main implements ApplicationListener {
         } else {
             texture = t1;
         }
+        this.render();
     }
 
     @Override
