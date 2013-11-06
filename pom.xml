@@ -18,10 +18,6 @@
 
     <repositories>
         <repository>
-            <id>gdx-nightlies</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
             <id>Repo1123</id>
             <name>Larry1123's Repo</name>
             <url>http://ci.larry1123.net/plugin/repository/everything/</url>
@@ -29,6 +25,7 @@
     </repositories>
 
     <build>
+        <defaultGoal>-U clean package source:jar install</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

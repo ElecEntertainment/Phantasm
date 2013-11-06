@@ -21,6 +21,7 @@
     </dependencies>
 
     <build>
+        <defaultGoal>-U clean package source:jar install</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
