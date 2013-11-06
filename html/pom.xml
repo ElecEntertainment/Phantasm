@@ -69,7 +69,7 @@
     </dependencies>
 
     <build>
-        <defaultGoal>-U clean package source:jar install</defaultGoal>
+        <defaultGoal>clean package source:jar install</defaultGoal>
         <resources>
             <resource>
                 <directory>${project.basedir}/src/main/java</directory>

@@ -44,7 +44,7 @@
     </dependencies>
 
     <build>
-        <defaultGoal>-U clean package source:jar install</defaultGoal>
+        <defaultGoal>clean package source:jar install</defaultGoal>
         <resources>
             <resource>
                 <directory>../assets</directory>
@@ -63,25 +63,6 @@
                         <phase>pre-integration-test</phase>
                         <goals>
                             <goal>copy</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.6</version>
-                <executions>
-                    <execution>
-                        <phase>integration-test</phase>
-                        <configuration>
-                            <target>
-                                <java fork="true" classname="${mainClass}" classpathref="maven.test.classpath">
-                                    <sysproperty key="java.library.path" value="target/natives"/>
-                                </java>
-                            </target>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
                         </goals>
                     </execution>
                 </executions>
