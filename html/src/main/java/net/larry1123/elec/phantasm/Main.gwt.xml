@@ -6,7 +6,7 @@
 
     <public path="resources"/>
 
-    <entry-point class='net.larry1123.elecentertainment.phantasm.html.MainHtml'/>
+    <entry-point class='net.larry1123.elec.phantasm.html.MainHtml'/>
     <set-configuration-property name="gdx.assetpath" value="assets"/>
     <set-configuration-property name="gdx.assetoutputpath" value="html/target/webapp"/>
 </module>

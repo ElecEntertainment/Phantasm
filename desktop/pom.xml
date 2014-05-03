@@ -13,7 +13,7 @@
     <name>Main desktop</name>
 
     <properties>
-        <mainClass>net.larry1123.elecentertainment.phantasm.java.MainDesktop</mainClass>
+        <mainClass>net.larry1123.elec.phantasm.java.MainDesktop</mainClass>
     </properties>
 
     <dependencies>
