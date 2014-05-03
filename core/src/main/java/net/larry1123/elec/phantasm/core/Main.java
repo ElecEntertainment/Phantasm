@@ -26,7 +26,8 @@ public class Main implements ApplicationListener {
     public void resize(int width, int height) {
         if (texture == t1) {
             texture = t2;
-        } else {
+        }
+        else {
             texture = t1;
         }
     }
@@ -40,7 +41,8 @@ public class Main implements ApplicationListener {
         batch.draw(texture, 100 + 100 * (float) Math.cos(elapsed), 100 + 25 * (float) Math.sin(elapsed));
         batch.end();
     }
-      //HI GUIZE
+
+    //HI GUIZE
     @Override
     public void pause() {
     }

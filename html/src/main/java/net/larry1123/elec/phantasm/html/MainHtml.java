@@ -6,6 +6,7 @@ import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
 import net.larry1123.elec.phantasm.core.Main;
 
 public class MainHtml extends GwtApplication {
+
     @Override
     public ApplicationListener getApplicationListener() {
         return new Main();
