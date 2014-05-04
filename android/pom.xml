@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>net.larry1123.elecentertainment</groupId>
+        <groupId>net.larry1123.elec</groupId>
         <artifactId>Phantasm</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -22,7 +22,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>net.larry1123.elecentertainment</groupId>
+            <groupId>net.larry1123.elec</groupId>
             <artifactId>Phantasm-core</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -100,15 +100,6 @@
                     </dex>
                 </configuration>
                 <extensions>true</extensions>
-                <executions>
-                    <execution>
-                        <id>deploy-on-install</id>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

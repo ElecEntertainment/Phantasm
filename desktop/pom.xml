@@ -18,7 +18,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>net.larry1123.elecentertainment</groupId>
+            <groupId>net.larry1123.elec</groupId>
             <artifactId>Phantasm-core</artifactId>
             <version>${project.version}</version>
         </dependency>

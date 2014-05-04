@@ -2,16 +2,16 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.larry1123.elecentertainment</groupId>
+    <groupId>net.larry1123.elec</groupId>
     <artifactId>Phantasm</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Main Parent</name>
 
     <properties>
-        <gdx.version>1.0.0</gdx.version>
+        <gdx.version>1.0.1-SNAPSHOT</gdx.version>
         <android.version>4.1.1.4</android.version>
-        <android.maven.version>3.6.0</android.maven.version>
+        <android.maven.version>3.8.0</android.maven.version>
         <gwt.version>2.5.0</gwt.version>
         <gwt.maven.version>2.5.0</gwt.maven.version>
     </properties>
@@ -63,6 +63,8 @@
     <modules>
         <module>core</module>
         <module>desktop</module>
+        <module>android</module>
+        <module>html</module>
     </modules>
 
     <dependencies>

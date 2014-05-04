@@ -14,4 +14,5 @@ public class MainActivity extends AndroidApplication {
         config.useGLSurfaceView20API18 = true;
         initialize(new Main(), config);
     }
+
 }

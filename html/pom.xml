@@ -13,13 +13,13 @@
     <name>Main HTML</name>
 
     <properties>
-        <gwt.module>net.larry1123.elecentertainment.phantasm.Main</gwt.module>
+        <gwt.module>net.larry1123.elec.phantasm.Main</gwt.module>
         <gwt.name>Phantasm</gwt.name>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>net.larry1123.elecentertainment</groupId>
+            <groupId>net.larry1123.elec</groupId>
             <artifactId>Phantasm-core</artifactId>
             <version>${project.version}</version>
         </dependency>
