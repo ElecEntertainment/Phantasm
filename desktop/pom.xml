@@ -92,6 +92,76 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.bluestemsoftware.open.maven.plugin</groupId>
+                <artifactId>launch4j-plugin</artifactId>
+                <version>1.5.0.0</version>
+                <executions>
+
+                    <!-- GUI exe -->
+                    <execution>
+                        <id>l4j-gui</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <headerType>gui</headerType>
+                            <outfile>target/${parent.artifactId}.exe</outfile>
+                            <jar>target/${artifactId}-${project.version}-jar-with-dependencies.jar</jar> <!-- 'shaded' is the value set on shadedClassifierName above -->
+                            <errTitle>App Err</errTitle>
+                            <classPath>
+                                <mainClass>${mainClass}</mainClass>
+                            </classPath>
+                            <icon>${project.basedir}/../assets/icon/ElecEntertainment.ico</icon>
+                            <jre>
+                                <minVersion>1.6.0</minVersion>
+                                <maxVersion>1.8.0</maxVersion>
+                                <initialHeapSize>128</initialHeapSize>
+                                <maxHeapSize>1024</maxHeapSize>
+                            </jre>
+                            <versionInfo>
+                                <fileVersion>1.0.0.0</fileVersion>
+                                <txtFileVersion>1.0.0.0</txtFileVersion>
+                                <fileDescription>Desc</fileDescription>
+                                <copyright>C</copyright>
+                                <productVersion>0.0.0.1</productVersion>
+                                <txtProductVersion>0.0.1 alpha</txtProductVersion>
+                                <productName>${parent.artifactId}</productName>
+                                <internalName>${name}</internalName>
+                                <originalFilename>${parent.artifactId}.exe</originalFilename>
+                            </versionInfo>
+                        </configuration>
+                    </execution>
+
+                    <!-- Command-line exe -->
+                    <execution>
+                        <id>l4j-cli</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <headerType>console</headerType>
+                            <outfile>target/${parent.artifactId}-Console.exe</outfile>
+                            <jar>target/${artifactId}-${project.version}-jar-with-dependencies.jar</jar> <!-- 'shaded' is the value set on shadedClassifierName above -->
+                            <errTitle>App Err</errTitle>
+                            <classPath>
+                                <mainClass>${mainClass}</mainClass>
+                            </classPath>
+                            <icon>${project.basedir}/../assets/icon/ElecEntertainment.ico</icon>
+                            <jre>
+                                <minVersion>1.6.0</minVersion>
+                                <maxVersion>1.8.0</maxVersion>
+                                <initialHeapSize>128</initialHeapSize>
+                                <maxHeapSize>1024</maxHeapSize>
+                            </jre>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 </project>
